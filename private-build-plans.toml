@@ -1,0 +1,69 @@
+[buildPlans.iosevka-nova]
+family = "Iosevka Nova"
+spacing = "normal"
+serifs = "sans"
+
+# Characters -------------------------------------------------------------------
+
+# Inherit most of the characters from the JetBrains style set
+[buildPlans.iosevka-nova.variants]
+inherits = "ss14"
+
+# Override individual characters
+[buildPlans.iosevka-nova.variants.design]
+cv16 = 4  # Q with a tail crossing the ring
+cv83 = 1  # extra high underscore
+cv85 = 3  # low caret
+cv86 = 2  # large contour parens
+cv95 = 1  # flat underbar on <= and >=
+cv98 = 1  # smooth question mark
+
+# Further override italic characters
+[buildPlans.iosevka-nova.variants.italic]
+cv26 = 9   # single-storey a with curly tail
+cv29 = 4   # serif-less d with tail
+cv30 = 2   # rounded e
+cv32 = 2   # double-storey, open g
+cv33 = 2   # h with tail
+cv34 = 8   # i with top serif and curly tail
+cv35 = 2   # j with top serif
+cv36 = 3   # k with cursive loop
+cv37 = 8   # l with top serif and curly tail
+cv38 = 4   # short-legged m with curly tail
+cv39 = 2   # n with tail
+cv44 = 1   # standard t
+cv45 = 4   # u with tail
+cv46 = 6   # cursive v
+cv47 = 14  # cursive w
+cv49 = 5   # cursive y
+cv50 = 25  # cursive z
+
+# Ligations --------------------------------------------------------------------
+[buildPlans.iosevka-nova.ligations]
+enables  = ["center-ops", "arrow", "arrow2", "trig", "eqeqeq", "eqeq", "ineq",
+            "exeq", "exeqeq", "slasheq", "ltgt-diamond", "brst", "plusplus",
+            "kern-dotty", "llgg", "html-comment", "brace-bar", "brack-bar",
+            "connected-underscore", "connected-number-sign",
+            "connected-tilde-as-wave", "connected-hyphen-as-solid-line"]
+
+# Weights ----------------------------------------------------------------------
+[buildPlans.iosevka-nova.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-nova.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+# Slopes -----------------------------------------------------------------------
+[buildPlans.iosevka-nova.slopes]
+upright = "normal"
+italic = "italic"
+
+# Widths -----------------------------------------------------------------------
+[buildPlans.iosevka-nova.widths.normal]
+shape = 500
+menu  = 5
+css   = "normal"
